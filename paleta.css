@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* cabecera */
+#cabecera {
+    text-align: center;
+    padding: 5vh;
+    background-color: rgb(212, 212, 212);
+
+}
+
+/* titulos */
+h3 {
+    text-align: center;
+    padding: 1vh;
+}
+
+
+.paleta {
+    /* Top Right Down Left */
+    margin: 2vh 2vw 2vh 2vw;
+
+
+    .calido {
+        /* Columnas */
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: 100%;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 747px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        /* Colores */
+        .rojo_intenso {
+            background-color: #FF0000;
+            color: #FF0000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rojo_carmesi {
+            background-color: #990000;
+            color: #990000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rojo_tomate {
+            background-color: #FF6347;
+            color: #FF6347;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .naranja_brillante {
+            background-color: #FF8000;
+            color: #FF8000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .naranja_quemado {
+            background-color: #FF6600;
+            color: #FF6600;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amarillo_sol {
+            background-color: #FFFF00;
+            color: #FFFF00;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amarillo_canario {
+            background-color: #FFD400;
+            color: #FFD400;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amarillo_mostaza {
+            background-color: #FFC107;
+            color: #FFC107;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dorado_metalico {
+            background-color: #FFD700;
+            color: #FFD700;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dorado_claro {
+            background-color: #FAFAD2;
+            color: #FAFAD2;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marron_chocolate {
+            background-color: #78421D;
+            color: #78421D;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marron_cafe {
+            background-color: #4B3621;
+            color: #4B3621;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo hover para todas las clases */
+        :hover {
+            color: #000000;
+            /* Color de texto negro */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+
+        .rojo_carmesi:hover,
+        .marron_chocolate:hover,
+        .marron_cafe:hover {
+            color: #FFFFFF;
+        }
+
+
+    }
+
+    .frios {
+        /* Columnas */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 747px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        /* Colores */
+        .azul_marino {
+            background-color: #000080;
+            color: #000080;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .azul_real {
+            background-color: #0041FF;
+            color: #0041FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .azul_cielo {
+            background-color: #87CEEB;
+            color: #87CEEB;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .azul_celeste {
+            background-color: #ADD8E6;
+            color: #ADD8E6;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_esmeralda {
+            background-color: #008000;
+            color: #008000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_bosque {
+            background-color: #006400;
+            color: #006400;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_menta {
+            background-color: #98FF98;
+            color: #98FF98;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_manzana {
+            background-color: #7FFF00;
+            color: #7FFF00;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_lima {
+            background-color: #32CD32;
+            color: #32CD32;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .turquesa_vibrante {
+            background-color: #40E0D0;
+            color: #40E0D0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .turquesa_palido {
+            background-color: #AFEEEE;
+            color: #AFEEEE;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .morado_intenso {
+            background-color: #800080;
+            color: #800080;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo hover para todas las clases */
+        :hover {
+            color: #000000;
+            /* Color de texto negro */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+
+        .azul_marino:hover,
+        .azul_real:hover,
+        .morado_intenso:hover {
+            color: #FFFFFF;
+        }
+    }
+
+    .neutros {
+        /* Columnas */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 321px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        .blanco {
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gris_claro {
+            background-color: #D3D3D3;
+            color: #D3D3D3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gris_medio {
+            background-color: #808080;
+            color: #808080;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gris_oscuro {
+            background-color: #4D4D4D;
+            color: #4D4D4D;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .negro {
+            background-color: #000000;
+            color: #000000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo hover para todas las clases */
+        :hover {
+            color: #000000;
+            /* Color de texto negro */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+
+        .negro:hover {
+            color: #FFFFFF;
+        }
+    }
+
+    .pastel {
+        /* Columnas */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 667px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        /* Colores */
+        .rosa_pastel {
+            background-color: #FFC0CB;
+            color: #FFC0CB;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .azul_pastel {
+            background-color: #ADD8E6;
+            color: #ADD8E6;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amarillo_pastel {
+            background-color: #FFFFE0;
+            color: #FFFFE0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_pastel {
+            background-color: #98FF98;
+            color: #98FF98;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lila_pastel {
+            background-color: #E6E6FA;
+            color: #E6E6FA;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .melocotón_pastel {
+            background-color: #FFD8D9;
+            color: #FFD8D9;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menta_pastel {
+            background-color: #97FFFF;
+            color: #97FFFF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .celeste_pastel {
+            background-color: #B0E2FF;
+            color: #B0E2FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lavanda_pastel {
+            background-color: #E6E0FF;
+            color: #E6E0FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .beige_pastel {
+            background-color: #F5F5DC;
+            color: #F5F5DC;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo hover para todas las clases */
+        :hover {
+            color: #000000;
+            /* Color de texto negro */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+    }
+
+    .vibrantes {
+        /* Columnas */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 443px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        /* Colores */
+        .magenta {
+            background-color: #FF00FF;
+            color: #FF00FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fucsia {
+            background-color: #C100FF;
+            color: #C100FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .verde_lima {
+            background-color: #32CD32;
+            color: #32CD32;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amarillo_neon {
+            background-color: #FFFF00;
+            color: #FFFF00;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .naranja_electrico {
+            background-color: #FF9933;
+            color: #FF9933;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .azul_electrico {
+            background-color: #00BFFF;
+            color: #00BFFF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .morado_electrico {
+            background-color: #DF00FF;
+            color: #DF00FF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo hover para todas las clases */
+        :hover {
+            color: #000000;
+            /* Color de texto negro */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+    }
+
+    .metalicos {
+        /* Columnas */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: 15vh;
+
+        /* Celulares */
+        @media only screen and (max-width: 269px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        /* Borde */
+        border: 1px solid #ddd;
+
+        /* Colores*/
+        .dorado {
+            background-color: #FFD700;
+            color: #FFD700;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .plateado {
+            background-color: #C0C0C0;
+            color: #C0C0C0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bronce {
+            background-color: #CD7F32;
+            color: #CD7F32;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cobre {
+            background-color: #B87333;
+            color: #B87333;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        :hover {
+            color: #000000;
+            font-weight: bold;
+        }
+
+    }
+
+}
